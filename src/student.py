@@ -1,5 +1,6 @@
 from src.person import Person
 
+# Create Student class that inherits the Person class 
 class Student(Person):
     def __init__(self, name, age, address, student_id):
         super().__init__(name, age, address)

@@ -1,3 +1,4 @@
+# Create Person class have method to display person's information: name, age, address
 class Person:
     def __init__(self, name: str, age: int, address: str):
         self.name = name
