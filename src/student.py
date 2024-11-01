@@ -25,3 +25,13 @@ class Student(Person):
               f"Address: {self.address}\n"
               f"Enrolled Courses: {', '.join(self.courses) if self.courses else 'None'}\n"
               f"Grades: {self.grades if self.grades else 'None'}")
+        
+
+    # Added method, display_grades to show all grades for a student.
+    def display_grades(self):
+        print(f"Grades for {self.name}:")
+        if not self.grades:
+            print("No grades available.")
+        else:
+            for course_code, grade in self.grades.items():
+                print(f"{course_code}: {grade.grade}")

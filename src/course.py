@@ -1,3 +1,6 @@
+from src.grade import Grade
+
+
 class Course:
     def __init__(self, course_name, course_code, instructor):
         self.course_name = course_name  # Name of the course
@@ -19,3 +22,13 @@ class Course:
         print(f"Code: {self.course_code}")
         print(f"Instructor: {self.instructor}")
         print(f"Enrolled Students: {', '.join(student.name for student in self.students)}")
+
+
+    # Assign grade to Crose
+    def assign_grade(self, student, grade):
+        if student not in self.students:
+            print(f"Student {student.name} is not enrolled in this course.")
+            return
+        grade_obj = Grade(student, self, grade)
+        student.grades[self.course_code] = grade_obj
+        print(f"Assigned grade '{grade}' to {student.name} for {self.course_name}.")
