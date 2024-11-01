@@ -1,12 +1,2 @@
-src/__pycache__/person.cpython-310.pyc
-tests/__pycache__/test_student_management_system.cpython-310.pyc
-src/__pycache__/student.cpython-310.pyc
-tests/__pycache__/test_student.cpython-310.pyc
-src/__pycache__/person.cpython-310.pyc
-tests/__pycache__/test_student_management_system.cpython-310.pyc
-src/__pycache__/course.cpython-310.pyc
-tests/unit_tests.py
-src/__pycache__/
-tests/__pycache__/
-src/__pycache__/grade.cpython-310.pyc
-tests/__pycache__/student_tests.cpython-310.pyc
+src/__pycache__/main.cpython-310.pyc
+src/__pycache__/system.cpython-310.pyc
