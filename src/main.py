@@ -1,5 +1,5 @@
 import json
-from src.system import Student, Course
+from system import Student, Course
 
 
 students = {}
